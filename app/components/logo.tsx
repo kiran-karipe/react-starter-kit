@@ -2,7 +2,7 @@
 /* SPDX-License-Identifier: MIT */
 
 import { BrightnessAutoRounded } from "@mui/icons-material";
-import { Box, BoxProps, IconButton, Typography } from "@mui/joy";
+import { Box, BoxProps, IconButton, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 export function Logo(props: LogoProps): JSX.Element {

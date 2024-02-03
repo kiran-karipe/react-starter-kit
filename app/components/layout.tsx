@@ -1,12 +1,10 @@
 /* SPDX-FileCopyrightText: 2014-present Kriasoft */
 /* SPDX-License-Identifier: MIT */
 
-import { Box, GlobalStyles } from "@mui/joy";
+import { Box, GlobalStyles } from "@mui/material";
 import { Fragment, Suspense } from "react";
 import { Outlet } from "react-router-dom";
 import { Logo } from "./logo";
-import { Sidebar } from "./sidebar";
-import { Toolbar } from "./toolbar";
 
 /**
  * The main application layout.
@@ -24,9 +22,6 @@ export function MainLayout(): JSX.Element {
           },
         }}
       />
-      <Toolbar sx={{ gridArea: "1 / 2 / 2 / -1" }} />
-
-      <Sidebar sx={{ gridArea: "1 / 1 / -1 / 2" }} />
       <Logo sx={{ gridArea: "1 / 1 / 2 / 2", zIndex: 100 }} />
 
       <Box sx={{ gridArea: "1 / 2 / -1 / -1", pt: "60px" }}>
